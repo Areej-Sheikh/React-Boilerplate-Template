@@ -1,5 +1,15 @@
+import { Routes, Route } from "react-router-dom";
+import Lenis from "@studio-freight/lenis";
+
+import Home from "./pages/Home";
 const App = () => {
-  return <div className="flex items-center justify-center h-screen text-5xl text-blue-400 font-bold underline">App</div>;
+  return (
+    <div>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+      </Routes>
+    </div>
+  );
 };
 
 export default App;
